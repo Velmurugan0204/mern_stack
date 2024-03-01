@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<style>
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Popins','sans serif';
+}
+body{
+    background: #1f242d;
+    color:#fff;
+}
+.header{
+    position: fixed;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 10%;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 600;
+    
+}
+.navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#fff;
+    margin-left: 30px;
+    font-weight: 500;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#0ef;
+  
+   
+}
+
+.home{
+    position: relative;
+    width:100%;
+    height:100vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 75px 15% 0;
+}
+
+.home-img{
+    width: 45%;
+         height: 100%;
+         position: absolute;
+         bottom: 0;
+         right: 100px;
+         border-radius: 50%;
+         float: right;
+}
+.home-img img {
+         height: 70%;
+         position:absolute;
+         left: 50%;
+         bottom: 10%;
+         transform: translate(-60%);
+      }
+.home-content{
+    max-width: 600px;
+    
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span{
+    color:#0ef;
+}
+.home-content h1{
+    font-size: 55px;
+    font-weight: 700;
+    margin:-3px 0;
+}
+.home-content p{
+    font-size: 17px;
+}
+.icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border:2px solid #0ef;
+    font-size:20px ;
+    color:#0ef;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 30px 15px 30px 0px;
+}
+.icons a:hover{
+    background-color: #0ef;
+    color:#1f242d;
+    box-shadow: 0 0 15px #0ef;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.projects,
+.skills,
+.contact {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.projects h2,
+.skills h2,
+.contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.projects p,
+.skills p,
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.skills ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#0ef;
+}
+
+.contact ul {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #0ef;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+}
+.skills ul li strong{
+    color:white;
+}
+.contact ul li {
+  color:#0ef;
+}
+.contact ul li strong{
+    color: white;
+}
+
+
+
+.skills{
+    display: flex;
+
+}
+.skills img{
+    width:500px;
+    float:right;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.project img {
+    margin-right: 40px;
+    border-radius: 20px;
+    width: 250px; 
+    height: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.project-description h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-right: 230px;
+    text-align: left;
+    text-decoration: underline;
+    align-items: center;
+    padding-left: 30%;
+}
+
+
+
+</style>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+       
+    </nav>
+</header>
+    <section class="home" id="home">
+        <div class="home1">
+        <div class="home-content">
+            <h3>Hello, it's me</h3>
+            <h1>Velmurugan</h1>
+            <h3>And I'm a <span>Frontend developer</span></h3>
+            <p>To secure an opportunity in the field of electronics and communication,<br> where I can apply my theoretical <br>
+                knowledge and develop practical skills in a professional environment, <br>seeking an opportunity to leverage my expertise and <br>
+                contribute to the success of an organization by delivering exceptional<br> engineering outcomes.</p>            <div class="home-img">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/male-programmer-8184999-6547032.png"/>
+               </div>
+            </div>
+            <div class="icons">
+
+   <a href="https://github.com/Velmurugan0204"><i class='bx bxl-github'></i></a>
+   <a href="#contact"><i class='bx bx-envelope' ></i></a>
+   <a href="https://www.linkedin.com/in/velmurugan-s-ece-692596259/"><i class='bx bxl-linkedin' ></i></a>
+</div>
+  
+
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div >
+            <h2><u>Projects</u></h2><br>
+            <div class="project" >
+                <img src="ai.jpg" alt="AI Consultancy">
+                <div class="project-description">
+                    <h4>AI Consultancy</h4>
+                    <p>Experience an advanced disease detection website empowered by AI algorithms, meticulously built
+                        with a blend of HTML, CSS, PHP, and Python for seamless functionality and accurate diagnostics.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://img.lovepik.com/element/45009/2241.png_860.png" alt="Task Management System" class="img">
+            <div class="project-description">
+                <h4>Task Management System</h4>
+                <p>Explore our Task Management System, a robust application developed using JavaFX and Scene Builder for the user interface design, and MySQL for database management. This system offers intuitive task organization, efficient tracking, and seamless collaboration among team members.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="skills" id="skills">
+      <div>  <h2><u>My Skills</u></h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Frameworks/Libraries:</strong> React.js, Node.js, Bootstrap, jQuery,Express.js</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+            <li><strong>Responsive Design:</strong> Media Queries, Flexbox, CSS Grid</li>
+            <li><strong>Other Tools:</strong>NPM, VS Code, Pycharm</li>
+        </ul></div>
+        <div class="image">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/professional-programmer-writing-code-for-testing-computer-software-9283229-7629677.png?f=webp"/>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div>  <h2><u>Contact Me</u></h2>
+        <p>Feel free to reach out to me via email or connect with me on social media:</p>
+        <ul>
+            <li><strong>Email:</strong> velmurugan.s2022ece@sece.ac.in</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/velmurugan-s-ece-692596259/">LinkedIn</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Velmurugan0204">GitHub</a></li>
+            <!-- <li><strong>Twitter:</strong> <a href="#">Your Twitter Profile</a></li> -->
+        </ul>
+        </div>
+        <!-- <div class="image">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-contact-us-3543012-2969399.png"/>
+        </div> -->
+        <p>I'm available for freelance work, collaboration opportunities, or just to chat about web development!</p>
+
+    </section>
+
+</body>
+</html>
+
+
