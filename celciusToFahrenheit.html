@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  
+ 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; 
+        }
+
+        .main {
+            padding-left: 35%;
+            padding-top: 7%;
+        }
+        .a{
+            padding-left: 2%;
+            color: #45a049;
+        }
+
+        .converter {
+            width: 35%;
+            height: fit-content;
+            border: 2px solid #4CAF50; 
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #celsius, #fahrenheit {
+            width: 280px;
+            height: 35px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .ftc, .ctf, .cl {
+            width: 75%;
+            height: 40px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; 
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 17px;
+        }
+        .cl{
+            width:35%;
+        }
+
+        .ftc:hover, .ctf:hover, .cl:hover {
+            background-color: #047c0a; 
+          
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1 class="a">Temperature Converter</h1>
+    <div class="converter">
+        <p><label for="celsius">Enter Celsius</label></p>
+        <p><input type="text" id="celsius"/></p>
+        <p><label for="fahrenheit">Enter Fahrenheit</label></p>
+        <p><input type="text" id="fahrenheit"/></p>
+        <p>
+            <button onclick="convertToCelsius()" class="ftc">Convert to Celsius</button>
+            <button onclick="convertToFahrenheit()" class="ctf">Convert to Fahrenheit</button>
+            <button onclick="Clear()" class="cl">Clear</button>
+        </p>
+    </div>
+</div>
+
+<script>
+    function convertToCelsius(){
+        var a = document.getElementById('fahrenheit').value;
+        var c = (parseInt(a) - 32) * (5/9);
+        document.getElementById("celsius").value = c.toFixed(2);
+    }
+
+    function convertToFahrenheit(){
+        var a = document.getElementById('celsius').value;
+        var f = ((9/5) * parseInt(a)) + 32;
+        document.getElementById("fahrenheit").value = f.toFixed(2);
+    }
+
+    function Clear(){
+        document.getElementById('fahrenheit').value = "";
+        document.getElementById('celsius').value = "";
+    }
+</script>
+
+   
+
+
+</body>
+</html>
