@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>Sign Up</title>
+</head>
+<body>
+   <div class="box">
+ <form>
+    <h2>Sign Up</h2>
+    <div class="textbox">
+        <input type="text" required="required">
+        <span>Full Name</span>
+        <div></div>
+    </div>
+    <div class="textbox">
+        <input type="email" required="required">
+        <span>Email</span>
+        <div></div>
+    </div>
+    <div class="textbox">
+         <input type="password" id="p1" required="required">
+        <span>Password</span>
+        <div></div>
+    </div>
+    <div class="textbox">
+         <input type="password" id="p2" required="required">
+        <span>Confirm Password</span>
+        <div></div>
+    </div>
+    <div class="abc">
+    <button type="submit" onclick="port()">Sign Up</button>
+    <div class="link">
+    <a href="#"  onclick="gotologin()">Already have an Account</a>
+</div>
+</div>
+ </form>
+   </div>
+   <script>
+   function gotologin(){
+    window.location.href='login.html';
+   }
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+    
+
+
+    </script>
+</body>
+</html>
